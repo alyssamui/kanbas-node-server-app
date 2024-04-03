@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "kanbase-node-server-app",
+  "name": "kanbas-node-server-app",
   "version": "1.0.0",
   "description": "Node.js HTTP web server for the Kanbas application",
   "main": "index.js",
