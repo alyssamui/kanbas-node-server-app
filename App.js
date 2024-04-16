@@ -13,7 +13,6 @@ const CONNECTION_STRING =
 
 mongoose.connect(CONNECTION_STRING);
 const app = express();
-app.use(express.json());
 app.use(
   cors({
     credentials: true,
@@ -34,6 +33,7 @@ if (process.env.NODE_ENV !== "development") {
   };
 }
 app.use(session(sessionOptions));
+app.use(express.json());
 UserRoutes(app);
 CourseRoutes(app);
 ModuleRoutes(app);
